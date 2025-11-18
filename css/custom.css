@@ -1,21 +1,23 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #cfceca; /* page background /*
+  --color-bg: light-dark(#f5f5f5, #707070); /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #7b81a4;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #dbdad4;
+  --color-text-logotype: black;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #b0b6db;
+
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-bg: #fffae2;
+  --color-link-hover: #a6777a; /* used  */
+  --color-link-active: #fffae2; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,12 +25,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: #a6777a;
+  --color-headline-text-page: light-dark(#fffae2, black);
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: light-dark(#fffae2, black);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,20 +39,20 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: light-dark(#b0b6db, #7b81a4);
+  --color-cta-card-bg: #fffae2;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: light-dark(#dbdad4, #9c9c9c);
+  --color-news-bg-inverted: light-dark(#b0b6db, #7b81a4);
+  --color-cta-newscard-bg: #7b81a4;
+  --color-cta-newscard-bg-inverted: #fffae2;
 
   /* Fonts */
   --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1rem;
@@ -63,7 +65,11 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #dbdad4;
+  --color-infobox-1-bg: #dbdad4;
+  --color-infobox-2-bg: #a6777a;
+}
+
+html.dark {
+  color-scheme: dark;
 }

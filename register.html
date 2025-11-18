@@ -1,81 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img class="logo" src="img/logo3.svg" alt="Logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <label class="switch">
+          <input id="toggle" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <li><a class="menuItem" href="instruction.html">Iskrise </a></li>
+        <li><a class="menuItem" href="register.html">Bliv is-redder</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>ANSØG OM AT BLIVE IS-REDDER</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Udfyld kontaktoplysninger herunder for at blive is-redder</h2>
+      </article>
+      <form id="webform">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <fieldset>
+              <label for="name">Fulde navn
+                <span class="instruktion">For- og efternavn</span>
+              </label>
+              <input type="text" name="name" id="name" required aria-describedby="name-error">
+              <p class="error-message" id="name-error">Indtast venligst en værdi</p>
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <label for="email">E-mail
+                <span class="instruktion">Skal indeholde et @ tegn</span>
+              </label>
+              <input type="email" name="email" id="email" required>
+              <span class="fejlmeddelelse"></span>
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <label>Redningsudstyr du ejer
+                <span class="instruktion">Du kan vælge flere</span></label>
+              <div>
+                <label for="koeleelement">
+                  <input type="checkbox" name="redning_checkbox" id="koeleelement"
+                    value="Køleelement">Køleelement</label>
+              </div>
+              <div>
+                <label for="vaffel">
+                  <input type="checkbox" name="redning_checkbox" id="vaffel"
+                    value="Reserve-vaffel">Reserve-vaffel</label>
+              </div>
+              <div>
+                <label for="kram">
+                  <input type="checkbox" name="redning_checkbox" id="kram" value="Varmt kram">Varmt kram</label>
+              </div>
+              <div>
+                <label for="kiks">
+                  <input type="checkbox" name="redning_checkbox" id="kiks" value="Trøstekiks">Trøstekiks</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <label for="motivationstext">Kort motivationstekst
+                <span class="instruktion">Beskriv hvorfor du fortjener at blive is-redder</span>
+              </label>
+              <textarea name="text" id="motivationstext" rows="6" cols="40" required></textarea>
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <label for="img_is">Billede af dig med en is
+                <span class="instruktion">Upload et billede her</span>
+              </label>
+              <input type="file" name="img" id="img_is" accept=".jpg, .jpeg, .png">
+            </fieldset>
+          </div>
+
+        </div>
+        <div class="ansoeg_btn">
+          <button id="send" type="submit">Ansøg</button>
+        </div>
+      </form>
+    </section>
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article>
+        <p>Fulde navn: <span class="name_output"></span></p>
+        <p>Email: <span class="email_output"></span></p>
+        <p>Redningsudstyr: <span class="redningsudstyr_output"></span></p>
+        <p>Motivationstekst: <span class="motivationstekst_output"></span></p>
+        <p>Billede af dig med en is: <span class="billede_output"></span></p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+
 </html>
