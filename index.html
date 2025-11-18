@@ -1,119 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img class="logo" src="img/logo3.svg" alt="Logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <label class="switch">
+          <input id="toggle" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <li><a class="menuItem" href="instruction.html">Iskrise</a></li>
+        <li><a class="menuItem" href="register.html">Bliv is-redder</a></li>
+
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img src="img/ikon5.svg" alt="ikon" />
+      <div>
+        <h1>IS-KRISEN ER VIRKELIG!</h1>
+        <p class="sub">En guide til forældre, der står ansigt til ansigt med den ultimative katastrofe.</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="img/teaser.webp" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>AKUT IS-KRISE!</h2>
+          <p>
+            Når isen rammer jorden, og tårerne truer med at oversvømme hele legepladsen, er det NU, du skal handle! På
+            denne side
+            finder du en helt uundværlig guide til alle forældre, der nogensinde har stået i den ultimative
+            børne-nødsituation: Den Tabte Is.
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/isredder.webp" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>Har du is i maven – helt bogstaveligt?</h2>
+          <p>
+            Bliv en del af det mest heroiske korps: <strong> Is-redderne!</strong> <br>
+            Her kan du ansøge om at blive certificeret is-krise-håndteringsspecialist – en person, der træder til, når
+            smeltet
+            chokolade og knust vaffel truer verdensfreden. Du lærer at håndtere panikgråd, tabt dessert og
+            dramatiske faldscenarier med ro, humor og en ekstra tier til isboden. Har du det, der skal til? </p>
+          <a href="register.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Is-chok i parken: Dreng taber sin is – og alle holder vejret</h3>
+        <p>Alt var fredeligt – indtil isen ramte jorden. Børn stivnede som ispinde, forældre tabte både kaffe og
+          fatning, og gråden rungede som en sirene over hele legepladsen.</p>
+        <img src="img/news1.webp" alt="news_img" />
+
+        <div popover id="popup">
+          <h2>Is-chok i parken: Dreng taber sin is – og alle holder vejret</h2>
+          <p>Alt var fredeligt – indtil isen ramte jorden. Børn stivnede som ispinde, forældre tabte både kaffe og
+            fatning, og gråden
+            rungede som en sirene over hele legepladsen.</p>
+          <img src="img/news1.webp" alt="news1">
+          <h3>En dag i parken får et dramatisk vendepunkt</h3>
+          <p>Det hele startede så stille og fredeligt: solen skinnede, fuglene pippede, og duften af nyslået græs fyldte
+            luften. Den
+            lille dreng stod med sin is og smilede stort. Men i et splitsekund gled isen ud af hans hånd, som om tiden
+            besluttede at
+            sætte farten ned for at gøre øjeblikket ekstra dramatisk. Flere forbipasserende beskriver det som en
+            slowmotion-film:
+            isen drejede, faldt, snurrede og landede fladt på jorden – en lyserød katastrofe.</p>
+          <h3>Chokket breder sig blandt vidner</h3>
+          <p>Den efterfølgende reaktion var næsten orkestreret af naturens egen dirigent. Først et kort, chokeret gisp
+            fra drengen.
+            Så en bævende underlæbe. Og til sidst brød gråden ud med sådan en kraft, at selv de mest rutinerede forældre
+            kiggede
+            bekymret op. Et par børn begyndte spontant at græde i sympati, mens andre stirrede med rædsel – som om de
+            pludselig så
+            deres egen is falde i fantasiens verden. Det var som en miniature-version af en naturkatastrofe, men med
+            softice som det
+            truede element.</p>
+          <h3>Hverdagshelten træder frem – med reserve-isen</h3>
+          <p>Midt i kaosset opstod en helt. En forælder – erfaren, rolig og ekstremt velpakket – trak en ekstra is frem
+            fra tasken.
+            En “beredskabs-is”, som snart blev dagens redning. Med en rolig hånd rakte vedkommende isen til den grædende
+            dreng.
+            Gråden stoppede. Øjnene tørrede. Smilet vendte tilbage. Stemningen i parken løsnede op, og flere forældre
+            nikkede
+            anerkendende, som om en uofficiel is-reddende superhelt havde vist sig.  Alle gik derfra med én vigtig
+            erkendelse: is
+            kan falde, men håbet lever videre, hvis man har en reserve.</p>
+          <button popovertarget="popup" id="close_btn">Luk</button>
+        </div>
+        <button popovertarget="popup" class="cta_btn" id="cta_open">Læs mere</button>
+
+      </article>
+
+      <article class="news_card">
+        <h3>Tre sekunders regel i oprør: Kan en tabt is reddes?</h3>
+        <p>Eksperter, forældre og børn er i total konflikt – kan en jordramt is reddes, eller er den officielt “faldet i
+          kampen”?</p>
+        <img src="img/news2.webp" alt="news_img" />
+
+        <div popover id="popup2">
+          <h2>Tre sekunders regel i oprør: Kan en tabt is reddes?</h2>
+          <p>Eksperter, forældre og børn er i total konflikt – kan en jordramt is reddes, eller er den officielt “faldet
+            i kampen”?</p>
+          <img src="img/news2.webp" alt="news2">
+          <h3>Et spørgsmål, der deler nationen</h3>
+          <p>Isen er tabt, men debatten lever.
+            Forældregrupper på sociale medier gløder, og samtaler på legepladser starter nu med spørgsmålet: “Ville du
+            have reddet
+            isen?” Den klassiske tre sekunders regel – den, som de fleste har brugt til at redde en tabt bolle eller en
+            gulerod –
+            er pludselig centrum for en national diskussion. Hygiejneeksperter kaster sig ind i debatten og fastslår, at
+            en is, der
+            rammer jorden, ikke har en chance. Børnene derimod? De mener, at man skal være modig og ikke så sart.</p>
+          <h3>“Jord er bare krymmel fra naturen” – Børnenes logik står stærkt</h3>
+          <p>Spørger man de mindste stemmer, er svaret klart. De kan ikke se problemet. “Man kan bare puste på den!”
+            siger en
+            seksårig med fuld overbevisning. En femårig tilføjer, at “jord bare er krymmel fra naturen”, mens en
+            treårig
+            ufortrødent forsøger at spise en sten som bevis. Børnenes argumenter er simple, men kraftfulde – og de
+            udfordrer de
+            voksnes logiske sans på dybeste plan.</p>
+          <h3>“Isen kan ikke reddes – giv op!”</h3>
+          <p>Hygiejne- og ernæringseksperter ryster på hovedet. En is består af blød, smeltende masse, der suger alt til
+            sig som en
+            svamp. Samtidig bliver den hurtigt fyldt med grus, sand, græs og alt det, man helst ikke vil tygge på. De
+            slår fast: is
+            er undtagelsen, reglen gælder ikke her. Alligevel fortsætter debatten. Forældre deler billeder af
+            “isredningsforsøg”,
+            og nogle forsøger at vaske isen under vandhanen. Resultatet? En våd, trist kejser af smeltet dessert.
+            Landet er delt –
+            og løsningen? Den er stadig is-uklar.</p>
+          <button popovertarget="popup" id="close_btn2">Luk</button>
+        </div>
+        <button popovertarget="popup2" class="cta_btn" id="cta_open2">Læs mere</button>
+      </article>
+
+      <article class="news_card">
+        <h3>Kreativt kaos: Improviserede snacks stopper is-krise</h3>
+        <p>Da alt virkede fortabt, blev dagen reddet af kiks, kinderæg og rosiner – en kaos-dessert uden regler og med
+          garanti for
+          smil.</p>
+        <img src="img/news3.webp" alt="news_img" />
+
+        <div popover id="popup3">
+          <h2>Kreativt kaos: Improviserede snacks stopper is-krise</h2>
+          <p>Da alt virkede fortabt, blev dagen reddet af kiks, kinderæg og rosiner – en kaos-dessert uden regler og med
+            garanti for
+            smil.</p>
+          <img src="img/news3.webp" alt="news3">
+          <h3>Gråden strømmer – torvet stopper op</h3>
+          <p>Da isen ramte jorden, føltes det som om tiden stod stille. Den lille drengs gråd rungede mellem butikker og
+            bænke, og
+            forbipasserende stoppede op med bekymrede ansigter. Det var tydeligt, at situationen ikke blot handlede om
+            en is – det
+            handlede om et barns dybeste skuffelse. Tårerne flød, følelserne var store, og selv folk med takeaway-kaffe
+            stod stille
+            og kiggede.</p>
+          <h3>Den magiske snacktaske åbner sig</h3>
+          <p>Og så skete det: en forælder med en ekstraordinær snacktaske trådte frem. Ud kom kiks, kinderæg, rosiner,
+            småkager og
+            mystiske granola-stykker. Med imponerende præcision blev ingredienserne lagt i lag, knebet, fordelt og
+            arrangeret. På
+            få øjeblikke blev en helt ny dessert skabt – en improviseret, farverig og måske en smule kaotisk blanding,
+            som fangede
+            drengens opmærksomhed øjeblikkeligt. Gråden stoppede. Øjnene blev store. Publikum så måbende til.</p>
+          <h3>Is-fri Is bliver en sensation</h3>
+          <p>Snart stod flere børn i kø for at få samme behandling. Navnet “Is-fri Is” blev født spontant, og det
+            spredte sig hurtigt
+            som et stykke kage ved børnefødselsdage. Forældrene grinede, men udvekslede også bekymrede blikke over
+            sukkerindholdet
+            i kombinationen. Ikke desto mindre var dagen reddet, og stemningen vendte fra dramatik til ren eufori.
+            Snakken går nu
+            om, at denne kreative løsning muligvis bliver det nye “must” i enhver snacktaske. Bedre være forberedt – man
+            ved aldrig,
+            hvornår isen rammer jorden igen.</p>
+
+          <button popovertarget="popup" id="close_btn3">Luk</button>
+        </div>
+        <button popovertarget="popup3" class="cta_btn" id="cta_open3">Læs mere</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+
 </html>

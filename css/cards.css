@@ -14,7 +14,7 @@
 }
 .daily_text h2 {
   background-color: var(--color-headline-bg);
-  color: var(--color-text-inverted);
+  color: var(--color-headline-text-page);
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
 }
@@ -75,7 +75,7 @@
   display: inline-block;
   padding: 0.4rem 1rem;
   background-color: var(--color-cta-card-bg);
-  color: var(--color-text-inverted);
+  color: var(--color-text);
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
@@ -90,4 +90,26 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 100ch;
+  width: 90vw;
+}
+
+[popover] {
+  opacity: 0;
+  rotate: 360deg;
+  transition: 0.5s allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+    rotate: -360deg;
+  }
 }
