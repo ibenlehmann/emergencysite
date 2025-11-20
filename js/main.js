@@ -13,7 +13,7 @@ head.addEventListener("click", clickHead);
 
 function mouseOverHead() {
   console.log("mouseOverHead");
-  head.style.fill = "pink";
+  head.style.fill = "#b0b6db";
 }
 
 function mouseOutHead() {
@@ -44,12 +44,12 @@ function clickHead() {
   requirement.classList.add("fadeIn");
 
   efficiency.classList.add("rotate");
-  efficiency.addEventListener("animationend", removeRotate);
-  head.addEventListener("click", rotate);
 }
 requirement.addEventListener("animationend", removeFadein);
 head.addEventListener("click", fadeIn);
 
+efficiency.addEventListener("animationend", removeRotate);
+head.addEventListener("click", rotate);
 ////// animation Fadein
 function fadeIn() {
   requirement.classList.add("fadeIn");
@@ -79,7 +79,7 @@ sun.addEventListener("click", clickSol);
 
 function mouseOverSol() {
   console.log("mouseOverSol");
-  sun.style.fill = "pink";
+  sun.style.fill = "#b0b6db";
 }
 
 function mouseOutSol() {
@@ -103,22 +103,9 @@ function clickSol() {
     <li>Barnet begynder at filosofere over meningen med dessert.</li>
     </ul>`;
 
-  /// animationer virker ikke....
+  /// animationer
   requirement.classList.add("fadeIn");
-
-  efficiency.classList.add("shake");
-  efficiency.addEventListener("animationend", removeShake);
-  sun.addEventListener("click", shake);
-}
-
-function shake() {
-  efficiency.classList.add("shake");
-  efficiency.addEventListener("animationend", removeShake);
-}
-
-function removeShake() {
-  efficiency.classList.remove("shake");
-  efficiency.addEventListener("animationend", removeShake);
+  efficiency.classList.add("rotate");
 }
 
 /////////////////////////////////// hotspotIs //////////////////////////////////////////
@@ -128,7 +115,7 @@ ice.addEventListener("click", clickIs);
 
 function mouseOverIs() {
   console.log("mouseOverIs");
-  ice.style.fill = "pink";
+  ice.style.fill = "#b0b6db";
 }
 
 function mouseOutIs() {
@@ -152,5 +139,7 @@ function clickIs() {
     <li>Du lærer barnet, at tårer = gratis is. Men hey… det er et problem for <i>fremtidige</i> dig.</li>
     </ul>`;
 
+  // animationer
   requirement.classList.add("fadeIn");
+  efficiency.classList.add("rotate");
 }

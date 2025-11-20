@@ -43,7 +43,7 @@ label {
 }
 input {
   border: 1px solid #21212133;
-  background: #f5f5f5;
+  background: var(--input-form);
   padding: 10px;
   border-radius: 4px;
 }
@@ -51,7 +51,7 @@ input {
 textarea {
   border-radius: 4px;
   border: 1px solid #21212133;
-  background: #f5f5f5;
+  background: var(--input-form);
 }
 .instruktion {
   font-size: 0.7rem;
@@ -82,7 +82,7 @@ button:hover {
 }
 
 #form-section {
-  background-color: #b0b6db;
+  background-color: var(--color-news-bg-inverted);
   padding: 25px;
 }
 
@@ -100,7 +100,7 @@ button:hover {
 }
 
 fieldset {
-  background-color: #dbdad4;
+  background-color: var(--fieldset-form);
   border-radius: 10px;
   border: none;
   padding: 20px;
@@ -130,7 +130,7 @@ span {
 
 #form-summary {
   background-color: #a6777a;
-  color: white;
+  color: var(--color-headline-text-page);
 }
 
 .output > p {
