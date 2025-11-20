@@ -7,7 +7,7 @@
   padding: 20px 0;
 }
 .info-text {
-  background-color: var(--color-menu-bg);
+  background-color: var(--color-card-bg);
 }
 .info-graphic {
   border-radius: 0;

@@ -20,12 +20,18 @@
 }
 .daily_text p {
   padding-right: 2rem;
+  padding-left: 20px;
   margin: 0 0 1rem 0;
 }
 .daily_text .cta_btn {
   justify-self: left;
   width: 80%;
 }
+
+.daily_cta {
+  padding-left: 20px;
+}
+
 .daily_img {
   width: 100%;
   height: 100%;
@@ -79,10 +85,12 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  border: none;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
+
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
   color: var(--color-text);
@@ -92,10 +100,56 @@
   margin-left: 1rem;
 }
 
+/************************** Popup Artikler *********************************/
 [popover] {
   max-height: 90vh;
   max-width: 100ch;
   width: 90vw;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+[popover] h2 {
+  margin: 40px 0 20px 0;
+  padding: 15px 30px;
+  background-color: var(--color-head-bg);
+  display: inline;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: var(--color-text-inverted);
+}
+
+#popup,
+#popup3 {
+  background-color: var(--color-news-bg);
+}
+
+#popup2 {
+  background-color: var(--color-news-bg-inverted);
+}
+
+.popup_text {
+  padding: 30px 60px;
+}
+.popup_text h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.close_btn {
+  padding: 5px 20px;
+  border-radius: var(--border-radius);
+  background-color: #a6777a;
+  position: relative;
+  bottom: 10px; /* afstand fra bunden */
+  left: 50%; /* flyt til midten */
+  transform: translateX(-50%);
+  border: none;
+}
+
+.close_btn:after {
+  content: "\2192";
+  margin-left: 1rem;
 }
 
 [popover] {
@@ -111,5 +165,11 @@
   @starting-style {
     opacity: 0;
     rotate: -360deg;
+  }
+}
+
+@media (width > 600px) {
+  [popover] {
+    width: 40vw;
   }
 }

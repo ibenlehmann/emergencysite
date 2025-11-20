@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/forms.css" />
   <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/apple-touch-icon.png">
 </head>
 
 <body id="register">
@@ -22,7 +23,7 @@
     <nav>
       <div id="logotype-wrapper" class="logo">
         <a href="index.html">
-          <img class="logo" src="img/logo3.svg" alt="Logo">
+          <img class="logo" src="img/logo.svg" alt="Logo">
         </a>
       </div>
       <ul class="menu">
@@ -47,6 +48,7 @@
       <article id="form-info">
         <h2>Udfyld kontaktoplysninger herunder for at blive is-redder</h2>
       </article>
+
       <form id="webform">
         <div class="form-grid">
 
@@ -109,7 +111,7 @@
               <label for="img_is">Billede af dig med en is
                 <span class="instruktion">Upload et billede her</span>
               </label>
-              <input type="file" name="img" id="img_is" accept=".jpg, .jpeg, .png">
+              <input type="file" name="img" id="img_is" accept=".jpg, .jpeg, .png" value="Ingen fil valgt">
             </fieldset>
           </div>
 
@@ -119,8 +121,9 @@
         </div>
       </form>
     </section>
+
     <section id="form-summary">
-      <h2>Summary</h2>
+      <h2>Dine svar</h2>
       <article>
         <p>Fulde navn: <span class="name_output"></span></p>
         <p>Email: <span class="email_output"></span></p>
@@ -129,6 +132,7 @@
         <p>Billede af dig med en is: <span class="billede_output"></span></p>
       </article>
     </section>
+
   </main>
   <footer>
     <nav class="some">
